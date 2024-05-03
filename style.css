@@ -1,6 +1,18 @@
 /* 
 <section class="depoimentos"> 
 */
+* {
+  line-height: auto;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 :root {
     --f1: clamp(0.6rem, 1vw, 0.8rem);
     --f2: clamp(0.8rem, 1vw, 1.0rem);
@@ -9,22 +21,37 @@
     --f5: clamp(1.5rem, 1vw, 2.5rem);
     --f6: clamp(2rem, 1vw, 3.5rem);
     --f7: clamp(4.0rem, 1vw, 5.5rem);
-    font-family: Arial, Helvetica, sans-serif;
   }
   
 
 body {
     background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .iphone {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 100px;
+}
+
+.iphone-img {
+  padding-left: 200px;
+}
+
+.box-iphone {
   background-image: url(fundo-iphone.png);
+  background-position: 10px;
   background-repeat: no-repeat;
-  background-position: 20px -100px;
+  background-size: 700px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.teste {
+  display: flex;
+  justify-content: center;
 }
 
 .iphone-img  img{
@@ -41,8 +68,29 @@ body {
   font-weight: 400;
 }
 
+.legenda-iphone {
+  line-height: 30px;
+  margin-bottom: 34px;
+  margin: 34px 0px 34px 0px;
+  width: 530px;
+}
+
+.destaque {
+  background: var(--DEGRADE-VERMELHO, linear-gradient(90deg, #7F1E10 -1.18%, #7F1E10 8.75%, #821E10 16.69%, #A21E11 98.11%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.bt-iphone {
+  border-radius: 10px;
+  padding: 21px 32px;
+  color: white;
+  background: var(--DEGRADE-VERMELHO, linear-gradient(90deg, #7F1E10 -1.18%, #7F1E10 8.75%, #821E10 16.69%, #A21E11 98.11%));
+}
+
 .box-depoimentos {
-  padding-top: 0;
+  padding-top: 600px;
 }
 
 section.depoimentos {
@@ -108,7 +156,6 @@ section.depoimentos {
     width: 80%;
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
   }
   section.depoimentos .slide .sombra {
     display: none;
@@ -195,6 +242,7 @@ section.depoimentos {
     section.depoimentos {
       flex-direction: column-reverse;
       padding: 60px 0;
+      justify-content: center;
     }
     section.depoimentos .texto {
       width: 100%;
@@ -249,5 +297,88 @@ section.depoimentos {
     section.depoimentos .slide .itens .item p {
       font-size: var(--f2);
     }
+
+    .box-depoimentos {
+      padding-top: 150px;
+    }
+
+    .teste-2 {
+      display: grid;
+      justify-content: center;
+      text-align: center;
+    }
+
+
+    .iphone {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+    }
+
+    .iphone-img {
+      padding-left: 70px;
+      display: grid;
+      justify-content: center;
+      justify-content: center;
+      height: auto;
+    }
+
+    .box-iphone {
+      background-image: none;
+      background-position: -40px -30px;
+      background-repeat: no-repeat;
+      background-size: 500px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+    
+
+    .teste {
+      display: grid;
+      justify-content: center;
+      align-self: center;
+    }
+
+    .iphone-img  img{
+      width: 100%;
+      height: auto;
+
+
+    }
+
+    .texto-iphone {
+      color: white;
+      width: 100%;
+      padding: 10px;
+    }
+
+    .titulo-iphone {
+      font-size: 40px;
+      font-weight: 400;
+    }
+
+    .legenda-iphone {
+      line-height: 30px;
+      margin-bottom: 34px;
+      margin: 34px 0px 34px 0px;
+      width: 100%;
+    }
+
+    .destaque {
+      background: var(--DEGRADE-VERMELHO, linear-gradient(90deg, #7F1E10 -1.18%, #7F1E10 8.75%, #821E10 16.69%, #A21E11 98.11%));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+    }
+
+    .bt-iphone {
+      border-radius: 10px;
+      padding: 21px 32px;
+      color: white;
+      background: var(--DEGRADE-VERMELHO, linear-gradient(90deg, #7F1E10 -1.18%, #7F1E10 8.75%, #821E10 16.69%, #A21E11 98.11%));
+    }
+
   }
   
